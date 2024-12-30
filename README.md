@@ -26,7 +26,7 @@ Steps performed:
 
 ## Feature Selection
 
-- Used `SelectKBest` with the chi-squared test to select the top 20 features.
+- Used `SelectKBest` with the `chi-squared` test to select the top 20 features.
 
 ## Model Selection and Training
 
