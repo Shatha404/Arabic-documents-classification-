@@ -1,7 +1,7 @@
 # Arabic-documents-classification-
  classify Arabic documents into predefined categories.
 
-The objective of this project is to classify Arabic documents into predefined categories (Economy, International news ,Local News ,Sports) using machine learning. The project involves preprocessing Arabic text, extracting features, training multiple classifiers, evaluating their performance, and deploying the model via a web application.
+The objective of this project is to classify Arabic documents into predefined categories (Economy, International news, Local News, Sports) using machine learning. The project involves preprocessing Arabic text, extracting features, training multiple classifiers, evaluating their performance, and deploying the model via a web application.
 ________________________________________
 ### Dataset
 - Dataset Name: Khaleej-2004
@@ -36,12 +36,13 @@ ________________________________________
  Classifiers Used Based on their accuracy after applying lazy classifier the top three accuracy was:
 -	Naive Bayes
 -	LGBM Classifier
- -	XGBoost Classifier
-•	Performance Metrics: 
-o	Accuracy
-o	Precision
-o	Recall
-o	F1-score
-o	Classification Report
+-	XGBoost Classifier
+  
+Performance Metrics: 
+ -	Accuracy
+ -	Precision
+ -	Recall
+ -	F1-score
+  - Classification Report
 
 
