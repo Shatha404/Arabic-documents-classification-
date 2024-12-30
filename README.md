@@ -64,7 +64,8 @@ Steps performed:
 - **API Endpoint**: `/predict`
 - **GUI**: Interactive form for text input and category prediction.
 
-![image](https://github.com/user-attachments/assets/ede74886-af36-462a-8272-cc3920292c85)
+![Screenshot 2024-12-29 212520](https://github.com/user-attachments/assets/24e02328-00fa-44cf-b9aa-3968337b7f8b)
+
 
 
 ## Conclusion
