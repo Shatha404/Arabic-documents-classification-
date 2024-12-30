@@ -13,17 +13,17 @@ ________________________________________
 ### Data Preprocessing
 •	Steps Performed: 
 1.	Text Cleaning using re (Regular Expressions): 
-	Removed punctuation.
-	Removed numbers.
-	Removed the extra spaces.
-	Normalized Arabic letters (e.g., ا for إ, أ, آ).
+ -	Removed punctuation.
+ -Removed numbers.
+ -	Removed the extra spaces.
+-	Normalized Arabic letters (e.g., ا for إ, أ, آ).
 2.	Tokenization: 
-	Split text into tokens (words) using the method .split().
+ -	Split text into tokens (words) using the method .split().
 
 3.	Vectorization: 
-	Used TF-IDF (Term Frequency-Inverse Document Frequency) to represent text numerically.
+-	Used TF-IDF (Term Frequency-Inverse Document Frequency) to represent text numerically.
 4.	Handcrafted Features: 
-	Added three features: word count, character count, keyword presence, and frequency in the text.
+-	Added three features: word count, character count, keyword presence, and frequency in the text.
 5.	Combines sparse matrices (TF-IDF features and handcrafted features) using scipy.sparse for memory-efficient processing.
 ________________________________________
 4. Feature Engineering
