@@ -34,9 +34,9 @@ ________________________________________
 
 5. Model Selection and Training
  Classifiers Used Based on their accuracy after applying lazy classifier the top three accuracy was:
-1.	Naive Bayes
-2.	LGBM Classifier
-3.	XGBoost Classifier
+-	Naive Bayes
+-	LGBM Classifier
+ -	XGBoost Classifier
 •	Performance Metrics: 
 o	Accuracy
 o	Precision
