@@ -4,7 +4,7 @@
 The objective of this project is to classify Arabic documents into predefined categories (Economy, International news, Local News, Sports) using machine learning. The project involves preprocessing Arabic text, extracting features, training multiple classifiers, evaluating their performance, and deploying the model via a web application.
 ________________________________________
 ### Dataset
-- Dataset Name: Khaleej-2004
+- Dataset Name: Khaleej-2004 https://metatext.io/datasets/khaleej-2004-corpus
 - Statistics: 
   - Number of Categories: 4.
   - Number of Documents: 5690.
