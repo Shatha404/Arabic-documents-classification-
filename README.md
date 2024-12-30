@@ -1,48 +1,72 @@
-# Arabic-documents-classification-
- classify Arabic documents into predefined categories.
+# Document Classification for Arabic Documents
 
-The objective of this project is to classify Arabic documents into predefined categories (Economy, International news, Local News, Sports) using machine learning. The project involves preprocessing Arabic text, extracting features, training multiple classifiers, evaluating their performance, and deploying the model via a web application.
-________________________________________
-### Dataset
-- Dataset Name: Khaleej-2004 https://metatext.io/datasets/khaleej-2004-corpus
-- Statistics: 
-  - Number of Categories: 4.
-  - Number of Documents: 5690.
-  - Categories: Economy, International News,Local News,Sports.
- 
-### Data Preprocessing
-•	Steps Performed: 
-1.	Text Cleaning using re (Regular Expressions): 
- -	Removed punctuation.
- -Removed numbers.
- -	Removed the extra spaces.
--	Normalized Arabic letters (e.g., ا for إ, أ, آ).
-2.	Tokenization: 
- -	Split text into tokens (words) using the method .split().
+This project focuses on classifying Arabic documents into predefined categories (Economy, International News, Local News, Sports) using machine learning techniques. It includes steps such as data preprocessing, feature engineering, model training, evaluation, and deployment through a web application.
 
-3.	Vectorization: 
--	Used TF-IDF (Term Frequency-Inverse Document Frequency) to represent text numerically.
-4.	Handcrafted Features: 
--	Added three features: word count, character count, keyword presence, and frequency in the text.
-5.	Combines sparse matrices (TF-IDF features and handcrafted features) using scipy.sparse for memory-efficient processing.
-________________________________________
-4. Feature Engineering
-•	SelectKBest to select the top k=20 features and chi-squared for scoring function to Measure the chi-squared statistic between features and target labels to evaluate feature importance.
-•	Applied feature selection using tool SelectKBest with the chi-squared test from scikit-learn to select the top 20 features.
-•	Keywords used for handcrafted features include terms like “الاقتصاد” (economy), “الرياضة” (sports), etc.
-________________________________________
+## Dataset
 
-5. Model Selection and Training
- Classifiers Used Based on their accuracy after applying lazy classifier the top three accuracy was:
--	Naive Bayes
--	LGBM Classifier
--	XGBoost Classifier
-  
-Performance Metrics: 
- -	Accuracy
- -	Precision
- -	Recall
- -	F1-score
-  - Classification Report
+- **Dataset Name**: Khaleej-2004
+- **Statistics**:
+  - **Number of Categories**: 4
+  - **Number of Documents**: 5690
+  - **Categories**: Economy, International News, Local News, Sports
 
+## Data Preprocessing
+
+Steps performed:
+1. **Text Cleaning**:
+   - Removed punctuation, numbers, and extra spaces
+   - Normalized Arabic letters (e.g., `ا` for `إ`, `أ`, `آ`)
+2. **Tokenization**:
+   - Split text into tokens using `.split()`
+3. **Vectorization**:
+   - Used TF-IDF (Term Frequency-Inverse Document Frequency)
+4. **Handcrafted Features**:
+   - Added features: word count, character count, and keyword presence/frequency
+5. Combined sparse matrices using `scipy.sparse` for memory efficiency.
+
+## Feature Selection
+
+- Used `SelectKBest` with the chi-squared test to select the top 20 features.
+
+## Model Selection and Training
+
+### Classifiers Used:
+1. **Naive Bayes**
+2. **LGBM Classifier**
+3. **XGBoost Classifier**
+
+### Evaluation Metrics:
+- **Accuracy**
+- **Precision**
+- **Recall**
+- **F1-Score**
+
+### Results (Summary):
+#### Naive Bayes
+- **Accuracy**: 91%
+- Best performance for International News and Sports categories.
+
+#### LGBM Classifier
+- **Accuracy**: 94%
+- Strong performance across all categories but some misclassifications in Economy.
+
+#### XGBoost Classifier
+- **Accuracy**: 94%
+- Balanced performance but slightly lower recall for Economy.
+
+## Prediction
+
+![image](https://github.com/user-attachments/assets/17261ce6-5f43-4124-985b-745943e6ec24)
+
+## Deployment
+
+- A Flask-based web application was developed.
+- **API Endpoint**: `/predict`
+- **GUI**: Interactive form for text input and category prediction.
+
+![image](https://github.com/user-attachments/assets/b9a14766-322b-4b32-97b7-d1b8f8f539ef)
+
+## Conclusion
+
+While LGBM and XGBoost achieved higher overall accuracy, Naive Bayes was chosen for its simplicity and reliability, particularly in Economy and International News categories.
 
