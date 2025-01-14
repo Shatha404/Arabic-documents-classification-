@@ -16,13 +16,15 @@ Steps performed:
 1. **Text Cleaning**:
    - Removed punctuation, numbers, and extra spaces
    - Normalized Arabic letters (e.g., `ا` for `إ`, `أ`, `آ`)
-2. **Tokenization**:
+2. **stemming**
+   - "يكتبون " >> "كتب"
+3. **Tokenization**:
    - Split text into tokens using `.split()`
-3. **Vectorization**:
+4. **Vectorization**:
    - Used TF-IDF (Term Frequency-Inverse Document Frequency)
-4. **Handcrafted Features**:
+5. **Handcrafted Features**:
    - Added features: word count, character count, and keyword presence/frequency
-5. Combined sparse matrices using `scipy.sparse` for memory efficiency.
+6. Combined sparse matrices using `scipy.sparse` for memory efficiency.
 
 ## Feature Selection
 
